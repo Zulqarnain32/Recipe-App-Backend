@@ -14,7 +14,11 @@ const recipeRouter = require("./Routes/reciper");
 //     credentials: true,
 //   })
 // );
-app.use(cors())
+app.use(cors({
+   origin: ["https://zulqarnain-recipe-app.vercel.app/"],
+   methods: ["GET", "POST"],
+   credentials: true,
+}))
 
 app.use(cookieParser());
 app.use(express.json());
