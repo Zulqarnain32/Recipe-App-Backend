@@ -9,7 +9,7 @@ const recipeRouter = require("./Routes/reciper");
 
 // app.use(
 //   cors({
-//     origin: ["http://localhost:5173"],
+//     origin: ["https://deployment-frontend.vercel.app"],
 //     methods: ["GET", "POST"],
 //     credentials: true,
 //   })
