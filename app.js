@@ -7,13 +7,14 @@ const port =  5000;
 const userRouter = require("./Routes/auth");
 const recipeRouter = require("./Routes/reciper");
 
-app.use(
-  cors({
-    origin: ["http://localhost:5173"],
-    methods: ["GET", "POST"],
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: ["http://localhost:5173"],
+//     methods: ["GET", "POST"],
+//     credentials: true,
+//   })
+// );
+app.use(cors())
 
 app.use(cookieParser());
 app.use(express.json());
